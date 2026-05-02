@@ -92,3 +92,42 @@ Operadores frecuentes:
 - Consulta = orden para leer.
 - Cláusulas = piezas de la orden.
 - Operadores = condiciones dentro de esas piezas.
+
+------------------------------------------------
+
+```sql
+-- create table users (
+--  name VARCHAR(10) UNIQUE -- con unique decimos que no habran nombre duplicados en mi tabla
+-- );-- Recomendable poner el punto y coma pues eso indica que hasta ahi termino la instruccion
+-- una ves tenemos la tabla creada hay que seleccionar y dar ctrl + enter para ejecutar la query
+-- ctrl + i para organizar mejor 
+INSERT INTO
+  users (name) -- como tenemos una columna podriamos solo dejar users o incluso aunque hubieran mas.
+VALUES
+  ('Alex'),
+  ('andrely');
+  
+  
+-- actualizar un registro
+update users -- actualiza tabla usuario
+set
+  name = 'Alexis'-- establece el nombre Alexis
+WHERE
+  name = 'Alex';-- donde el nombre es Alex
+
+
+
+  
+-- sentencia de seleccion
+select
+  *
+from
+  users
+limit
+  2
+OFFSET
+  2; -- saltar los primeros 2 y traer 2 
+
+-- selecciona todos los registros de la tabla usuarios con limite y salto
+
+```
