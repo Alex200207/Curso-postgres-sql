@@ -93,21 +93,21 @@ Operadores frecuentes:
 - Cláusulas = piezas de la orden.
 - Operadores = condiciones dentro de esas piezas.
 
-------------------------------------------------
+---
 
 ```sql
 -- create table users (
 --  name VARCHAR(10) UNIQUE -- con unique decimos que no habran nombre duplicados en mi tabla
 -- );-- Recomendable poner el punto y coma pues eso indica que hasta ahi termino la instruccion
 -- una ves tenemos la tabla creada hay que seleccionar y dar ctrl + enter para ejecutar la query
--- ctrl + i para organizar mejor 
+-- ctrl + i para organizar mejor
 INSERT INTO
   users (name) -- como tenemos una columna podriamos solo dejar users o incluso aunque hubieran mas.
 VALUES
   ('Alex'),
   ('andrely');
-  
-  
+
+
 -- actualizar un registro
 update users -- actualiza tabla usuario
 set
@@ -117,7 +117,7 @@ WHERE
 
 
 
-  
+
 -- sentencia de seleccion
 select
   *
@@ -126,8 +126,38 @@ from
 limit
   2
 OFFSET
-  2; -- saltar los primeros 2 y traer 2 
+  2; -- saltar los primeros 2 y traer 2
 
 -- selecciona todos los registros de la tabla usuarios con limite y salto
+
+-- sentencia de seleccion
+select
+  *
+from
+  users
+limit
+  2
+OFFSET
+  2; -- saltar los primeros 2 y traer 2
+
+-- selecciona todos los registros de la tabla usuarios con limite y salto
+
+
+--clausula where
+-- Selecciona todo de la tabla users donde el nombre sea 'Alexis'.
+SELECT *  from users where name = 'Alexis';
+
+-- LIKE se usa para buscar texto por patrones en SQL (por ejemplo en PostgreSQL).
+
+-- “Selecciona todos los registros donde el nombre contenga ‘lexis’ en cualquier parte
+
+SELECT * FROM users WHERE name LIKE '%lexis%';
+
+-- Selecciona todos los registros de la tabla users donde el nombre tenga cualquier carácter en la primera posición, seguido de ‘lexis’, y luego cualquier cosa después.”
+select * from users where name like '_lexis%';
+
+-- Selecciona todos los registros de la tabla users donde el nombre tenga exactamente 6 caracteres: cualquier carácter al inicio, seguido de ‘lexi’, y cualquier carácter al final.
+select * from users where name like '_lexi_';
+
 
 ```
