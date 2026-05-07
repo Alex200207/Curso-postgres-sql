@@ -31,4 +31,5 @@ where
   followers = 4
   or followers = 4999 -- esto va terminar sumando lo valores asi que no podremos verlos separados
 GROUp BY
-  followers -- agrupa los valores por followers y asi no los suma.
+  followers -- agrupa los valores por (columna) followers y asi no los suma.
+  
