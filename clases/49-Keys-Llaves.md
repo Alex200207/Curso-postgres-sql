@@ -37,3 +37,18 @@ En conclusion las claves candidatas no es mas que ese conjunto de atributoss que
 
 - Es un conjunto de atributos que puede idenficar de forma unica.
 - Es un conjunto de una clave candidata.
+
+Basicamente lo que tenemos aqui es nuestro employee_id y si hacemos la llave super key del employee_id + el full name esto podria ser un super_key identificador unico , sabes que el nombre de persona puede ser duplicado pero si lo unimos a employe_id va ser unico.
+
+## Foreign key
+
+![alt text](image-12.png)
+
+- Llaves foraneas son usadas para apuntar a la llave primaria de otra tabla.
+- El department_id en ambas tablas , deben der ser el mismo tipo de dato y longitud.
+
+## Composite Key
+
+![alt text](image-13.png)
+
+- Cuando una clave primaria consta de mas de un atributo , se conoce como clave compuesta.
