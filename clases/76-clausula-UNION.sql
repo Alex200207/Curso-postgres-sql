@@ -1,4 +1,5 @@
--- la UNION es una forma de unir resultados, es sumamente util cuando hay varios resultados que queremos anadir en un solo resultset porque puede ser que queramos hacer un reporte o hacer algo en particular que requiera hacer dos queries
+-- la UNION es una forma de unir resultados, es sumamente util cuando hay varios resultados 
+-- que queremos anadir en un solo resultset porque puede ser que queramos hacer un reporte o hacer algo en particular que requiera hacer dos queries
 
 
 
