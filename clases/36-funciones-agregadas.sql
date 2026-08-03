@@ -12,3 +12,16 @@ SELECT
   *
 FROM
   users;
+
+
+
+SELECT
+COUNT(*) as total_users -- con count traemos el total de registros de una tabla
+MIN(followers) as min_followers -- trae el valor minimo de seguidores
+MAX(followers) as max_followers -- traer el valor maximo 
+ROUND(5.5) as avg_followers -- redondea valores 
+AVG(followrs) as avg_followers -- promedio de todos los followers
+SUM(followers) / count(*) as avg_manual -- promedio manual de los followers
+
+FROM 
+users;

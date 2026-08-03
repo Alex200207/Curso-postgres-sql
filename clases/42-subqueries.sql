@@ -24,3 +24,6 @@ FROM
     ORDER BY
       SUBSTRING(email, POSITION('@' IN email) + 1) ASC
   ) as email_domain -- es hacer un select from a email domain
+
+
+

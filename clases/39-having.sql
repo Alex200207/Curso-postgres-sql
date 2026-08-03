@@ -13,3 +13,14 @@ ORDER BY country DESC;
 -- 2. Agrupa los usuarios según el país
 -- 3. Cuenta cuántos usuarios existen en cada país
 -- 4. Devuelve el total de usuarios junto al nombre del país
+
+
+SELECT 
+    count(*) as total,
+    country
+FROM
+     users
+GROUP BY
+    contry
+HAVING COUNT(*) BETWEEN 1 AND 5
+ORDER BY country DESC;

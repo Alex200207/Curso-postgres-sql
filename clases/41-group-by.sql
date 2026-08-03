@@ -19,3 +19,10 @@ HAVING COUNT(*) > 1;
 -- traducción directa:
 -- contar cuántos usuarios hay por cada dominio de correo
 -- y mostrar únicamente los dominios repetidos
+
+select
+count(*)
+substring(email, position('@' in email) + 1) as domain
+from users
+group by substring(email, position('@' in email) + 1)
+having count(*0) > 1;

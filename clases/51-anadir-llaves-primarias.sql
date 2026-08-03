@@ -9,3 +9,7 @@ ALTER TABLE country
 add PRIMARY KEY (code);
 
 select * from country;
+
+alter table contry 
+
+add primary key (code);
